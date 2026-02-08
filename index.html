@@ -10,15 +10,27 @@
 <body>
 
   <!-- HERO -->
+  <div class="stars"></div>
+  <div class="particles"></div>
   <section class="hero">
-    <div class="hero-content">
-      <h1>🦀 CLAW MEME</h1>
+  <div class="hero-content">
+
+    <!-- MASKOT KEPIITING -->
+    <img src="crab.png" alt="Claw Meme Crab" class="hero-mascot">
+<div class="bubbles">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+    <h1>🦀 CLAW MEME</h1>
       <p class="tagline">No utility. Just claws.</p>
       <p class="subtext">Born from the deep sea. Raised by the internet. Powered by pure meme energy.</p>
       <div class="buttons">
         <a href="#" class="btn primary">🚀 Buy $CLAW</a>
-        <a href="#" class="btn">📜 Meme Paper</a>
-        <a href="#" class="btn">🐦 Join X</a>
+        <a href="#" class="btn" id="openPaper">📜 Meme Whitepaper</a>
+        <a href="https://x.com/clawmemeai" target="_blank" class="btn">🐦 Join X</a>
       </div>
     </div>
   </section>
@@ -26,16 +38,16 @@
   <!-- ABOUT -->
   <section class="about">
     <h2>What is Claw Meme?</h2>
-    <p>
-      Claw Meme adalah koin meme yang tidak peduli roadmap ribet atau janji palsu.
-      Kami hanya punya capit kuat, mental baja, dan komunitas chaos.
-    </p>
-    <ul>
-      <li>🦀 Capit kuat</li>
-      <li>🌊 Mental laut dalam</li>
-      <li>🤡 Komunitas chaos</li>
-      <li>🚀 Harapan ke bulan</li>
-    </ul>
+<p>
+Claw Meme is a meme coin that doesn’t care about complicated roadmaps or fake promises.
+We only have strong claws, deep-sea mentality, and a chaotic community.
+</p>
+<ul>
+  <li>🦀 Strong claws</li>
+  <li>🌊 Deep sea mentality</li>
+  <li>🤡 Chaos community</li>
+  <li>🚀 Hope for the moon</li>
+</ul>
   </section>
 
   <!-- FEATURES -->
@@ -44,19 +56,19 @@
     <div class="feature-grid">
       <div class="card">
         <h3>🦀 Double Claw Power</h3>
-        <p>Market turun? Nyapit. Market naik? Nyapit juga.</p>
+<p>Market down? We pinch. Market up? We pinch harder.</p>
       </div>
       <div class="card">
         <h3>🌊 Deep Sea Mentality</h3>
-        <p>Tekanan market adalah habitat alami kami.</p>
+<p>Market pressure is our natural habitat.</p>
       </div>
       <div class="card">
         <h3>🤡 Meme Driven</h3>
-        <p>Tidak ada utility. Hanya vibes dan meme.</p>
+<p>No utility. Only vibes and memes.</p>
       </div>
       <div class="card">
         <h3>🚀 Community Fueled</h3>
-        <p>Semakin rame, semakin ganas.</p>
+<p>The louder the community, the stronger the claws.</p>
       </div>
     </div>
   </section>
@@ -66,22 +78,159 @@
     <h2>Roadmap (Maybe)</h2>
     <div class="phase">
       <h3>Phase 1 — Crawl Out</h3>
-      <p>Launch website. Sebar meme. Bangun pasukan capit.</p>
+<p>Launch website. Spread memes. Build the claw army.</p>
     </div>
     <div class="phase">
       <h3>Phase 2 — Spread the Claws</h3>
-      <p>Serbu sosial media. Listing di mana aja yang mau nerima.</p>
+<p>Raid social media. Get listed anywhere that accepts us.</p>
     </div>
     <div class="phase">
       <h3>Phase 3 — Moon or Ocean Floor</h3>
-      <p>Kita ke bulan 🚀 atau tetap di dasar laut 🌊 — tetap nyapit.</p>
+<p>We go to the moon 🚀 or stay at the ocean floor 🌊 — still pinching.</p>
     </div>
   </section>
+
+  <!-- MEME GALLERY -->
+<section class="memes">
+  <h2>🦀 Meme Arsenal</h2>
+  <div class="meme-grid">
+    <img src="meme1.png" alt="Claw Meme 1">
+    <img src="meme2.png" alt="Claw Meme 2">
+    <img src="meme3.png" alt="Claw Meme 3">
+    <img src="meme4.png" alt="Claw Meme 4">
+  </div>
+</section>
 
   <!-- FOOTER -->
   <footer>
     <p>🦀 CLAW MEME — Grab the market before it grabs you.</p>
   </footer>
+  <script>
+  const crab = document.querySelector('.hero-mascot');
+
+  crab.addEventListener('click', () => {
+    crab.classList.add('shake');
+    setTimeout(() => crab.classList.remove('shake'), 500);
+  });
+</script>
+<script>
+  document.addEventListener('mousemove', (e) => {
+    const x = (window.innerWidth / 2 - e.pageX) / 40;
+    const y = (window.innerHeight / 2 - e.pageY) / 40;
+    document.querySelector('.hero-mascot').style.transform =
+      `translate(${x}px, ${y}px)`;
+  });
+</script>
+<!-- MEME WHITEPAPER POPUP -->
+<div class="paper-modal" id="paperModal">
+  <div class="paper-content">
+    <span class="close-paper">&times;</span>
+    <h2>🦀 CLAW MEME WHITEPAPER</h2>
+    <p><strong>Mission:</strong> Pinch the market with maximum meme energy.</p>
+
+    <h3>📜 About</h3>
+    <p>Claw Meme is powered by vibes, chaos, and the unbreakable force of community claws.</p>
+
+    <h3>💰 Tokenomics</h3>
+    <ul>
+      <li>Supply: Infinite vibes</li>
+      <li>Utility: 0%</li>
+      <li>Meme Power: 100%</li>
+    </ul>
+
+    <h3>📊 Live Meme Stats</h3>
+<p>Claw Holders: <span id="holders">0</span></p>
+<p>Meme Power Level: <span id="memePower">0</span>%</p>
+
+<h3>📈 Claw Growth Chart</h3>
+<div class="chart">
+  <div class="bar" style="--h:40%"></div>
+  <div class="bar" style="--h:65%"></div>
+  <div class="bar" style="--h:55%"></div>
+  <div class="bar" style="--h:80%"></div>
+  <div class="bar" style="--h:95%"></div>
+</div>
+<p style="font-size:12px; opacity:0.6; text-align:center;">
+Totally scientific meme-based growth analysis
+</p>
+
+<script>
+  function animateValue(id, end, duration) {
+    let start = 0;
+    const stepTime = Math.abs(Math.floor(duration / end));
+    const obj = document.getElementById(id);
+
+    const timer = setInterval(() => {
+      start += 1;
+      obj.textContent = start;
+      if (start >= end) clearInterval(timer);
+    }, stepTime);
+  }
+
+  openBtn.onclick = () => {
+    modal.style.display = 'flex';
+    animateValue("holders", 1287, 1500);
+    animateValue("memePower", 100, 1500);
+  };
+</script>
+<div style="text-align:center; margin-top:20px;">
+  <a href="#" class="btn primary" onclick="alert('Whitepaper coming soon 🦀')">📥 Download PDF</a>
+</div>
+
+    <h3>🚀 Roadmap</h3>
+    <p>Step 1: Meme<br>Step 2: More Meme<br>Step 3: Moon (maybe)</p>
+
+    <p style="margin-top:20px; font-style: italic; opacity:0.7;">
+      This is not financial advice. This is claw advice.
+    </p>
+  </div>
+</div>
+<script>
+  const openBtn = document.getElementById('openPaper');
+  const modal = document.getElementById('paperModal');
+  const closeBtn = document.querySelector('.close-paper');
+
+  function animateValue(id, end, duration) {
+    let start = 0;
+    const stepTime = Math.abs(Math.floor(duration / end));
+    const obj = document.getElementById(id);
+
+    const timer = setInterval(() => {
+      start += 1;
+      obj.textContent = start;
+      if (start >= end) clearInterval(timer);
+    }, stepTime);
+  }
+
+  openBtn.onclick = () => {
+  modal.style.display = 'flex';
+  modal.classList.add('show');
+  animateValue("holders", 1287, 1500);
+  animateValue("memePower", 100, 1500);
+  animateChart(); // 🔥 jalankan chart
+};
+
+  closeBtn.onclick = () => {
+    modal.style.display = 'none';
+    modal.classList.remove('show');
+  };
+
+  window.onclick = (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+      modal.classList.remove('show');
+    }
+  };
+  function animateChart() {
+  const bars = document.querySelectorAll('.bar');
+  bars.forEach(bar => {
+    const height = bar.style.getPropertyValue('--h');
+    setTimeout(() => {
+      bar.style.height = height;
+    }, 200);
+  });
+}
+</script>
 
 </body>
 </html>
